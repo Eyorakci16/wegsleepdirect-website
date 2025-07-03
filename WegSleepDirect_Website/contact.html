@@ -93,7 +93,7 @@
             <h2>Contactformulier</h2>
             <p>Vul het onderstaande formulier in en wij nemen zo snel mogelijk contact met u op.</p>
         
-            <form action="contact.php" method="POST" class="contact-form" id="contact-form" aria-labelledby="contact-form-heading" novalidate>
+            <form action="send_email.php" method="POST" class="contact-form" id="contact-form" aria-labelledby="contact-form-heading" novalidate>
                 <fieldset>
                     <legend id="contact-form-heading">Fill in your details to get in touch</legend>
             
@@ -143,11 +143,13 @@
                     
                     <!-- Message Field -->
                     <label for="message">Vragen / Opmerkingen</label>
-                    <textarea 
-                        id="message" 
-                        name="message" 
-                        rows="6" 
-                        placeholder="Your message" 
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        required
+                        placeholder="Your message"
+                        aria-required="true"
                         aria-placeholder="Enter your message here"></textarea>
             
                     <!-- Submit Button -->
