@@ -47,3 +47,21 @@ CREATE TABLE contact_messages (
     message TEXT NOT NULL,              -- User's message (Required)
     submitted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP -- Timestamp of submission
 );
+
+```
+
+### Step 2: Configure the PHP Script
+
+1. Open `WegSleepDirect_Website/send_email.php`.
+2. Set `$host`, `$username`, and `$password` to match your MySQL setup.
+3. Change `$to` to the email address that should receive contact requests.
+
+### Step 3: Deploy the Files
+
+1. Upload the `WegSleepDirect_Website` folder to your PHP-enabled web server.
+2. Import the SQL script above into your MySQL database.
+3. Ensure the `send_email.php` file has permission to write to the database.
+
+## Usage
+
+Navigate to `contact.html` in your browser and fill in the form. Upon submission, the data will be saved to the `contact_messages` table and an email notification will be sent to the configured address.
