@@ -1,0 +1,26 @@
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# Log files
+*.log
+
+# Node.js dependencies (if used)
+node_modules/
+
+# Build or distribution directories (if used in future)
+dist/
+build/
+
+# Environment variable files (if applicable)
+.env
+
+# IDE/editor folders
+.vscode/
+.idea/
+
+# SASS or other preprocessor cache
+.sass-cache/
